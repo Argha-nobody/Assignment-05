@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if ( !isNaN(value) && value > 0 ) {
             nowbl -= value; 
-            balnElement.textContent = nowbl.toFixed(2); 
+            balnElement.textContent = nowbl + " BDT"; 
             inputt.value = '';
             upp.textContent = value;
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if ( !isNaN(value) && value > 0 ) {
             nowbl -= value; 
-            balnElement.textContent = nowbl.toFixed(2); 
+            balnElement.textContent = nowbl + " BDT"; 
             inputt.value = '';
             upp.textContent = value;
         } else {
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if ( !isNaN(value) && value > 0 ) {
             nowbl -= value; 
-            balnElement.textContent = nowbl.toFixed(2); 
+            balnElement.textContent = nowbl + " BDT"; 
             inputt.value = '';
             upp.textContent = value;
         } else {
