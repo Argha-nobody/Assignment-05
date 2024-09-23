@@ -1,20 +1,77 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const balnElement = document.getElementById("main-balance"); // Get the balance element
-    let nowbl = parseFloat(balnElement.textContent); // Parse the current balance as a number
+    const balnElement = document.getElementById("main-balance"); 
+    let nowbl = parseFloat(balnElement.textContent); 
 
-    const inputt = document.getElementById("in"); // Get the input field
-    const btn = document.getElementById("out"); // Get the donate button
+    const inputt = document.getElementById("in"); 
+    const btn = document.getElementById("out"); 
+    const upp = document.getElementById("update1-balance");
 
-    btn.addEventListener("click", function() { // Add click event listener to the button
-        const value = parseFloat(inputt.value); // Get the donation amount
+    btn.addEventListener("click", function() {
 
-        // Check if the value is a valid number and greater than 0
-        if (!isNaN(value) && value > 0) {
-            nowbl -= value; // Subtract donation from the balance
-            balnElement.textContent = nowbl.toFixed(2); // Update the balance in the element
-            inputt.value = ''; // Clear the input field
+        const value = parseFloat(inputt.value); 
+
+        if ( !isNaN(value) && value > 0 ) {
+            nowbl -= value; 
+            balnElement.textContent = nowbl.toFixed(2); 
+            inputt.value = '';
+            upp.textContent = value;
+
         } else {
-            alert("Please enter a valid donation amount."); // Alert if the input is invalid
+            alert("Please enter a valid donation amount."); 
+        }
+
+
+
+
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const balnElement = document.getElementById("main-balance"); 
+    let nowbl = parseFloat(balnElement.textContent); 
+
+    const inputt = document.getElementById("inp-feni"); 
+    const btn = document.getElementById("btn-feni");
+    const upp = document.getElementById("update2-balance");
+
+    btn.addEventListener("click", function() {
+
+        const value = parseFloat(inputt.value); 
+
+        if ( !isNaN(value) && value > 0 ) {
+            nowbl -= value; 
+            balnElement.textContent = nowbl.toFixed(2); 
+            inputt.value = '';
+            upp.textContent = value;
+        } else {
+            alert("Please enter a valid donation amount."); 
         }
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const balnElement = document.getElementById("main-balance"); 
+    let nowbl = parseFloat(balnElement.textContent); 
+
+    const inputt = document.getElementById("inp-quota"); 
+    const btn = document.getElementById("btn-quota");
+    const upp = document.getElementById("update3-balance"); 
+
+    btn.addEventListener("click", function() {
+
+        const value = parseFloat(inputt.value); 
+
+        if ( !isNaN(value) && value > 0 ) {
+            nowbl -= value; 
+            balnElement.textContent = nowbl.toFixed(2); 
+            inputt.value = '';
+            upp.textContent = value;
+        } else {
+            alert("Please enter a valid donation amount."); 
+        }
+    });
+});
+
+
