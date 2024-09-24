@@ -88,7 +88,34 @@
         </p>
         <input id="in" type="text" placeholder="Write Donation Amount" class="mt-6 lg:w-[580px] lg:h-12 w-full h-full border-2 p-2 rounded-md">
         <br>
-        <button id="out" class="mt-4 lg:w-[580px] w-full  lg:h-12 h-full font-bold border-2 p-2 rounded-md bg-lime-400">Donate Now</button>
+
+         <!-- Open the modal using ID.showModal() method -->
+      <button id="out" class="btn mt-4 lg:w-[580px] w-full lg:h-12  h-full font-bold border-2 p-2 rounded-md bg-lime-400" onclick="my_modal_2.showModal()"> Donate Now </button>
+      <dialog id="my_modal_2" class="modal">
+       <div class="modal-box">
+        
+        <div class="text-center">  
+
+            <h1 class="text-4xl  font-bold">  Congrates! </h1>
+
+        <img src="coin.png" alt="" class="mx-auto my-5">
+
+        <h1 class="text-base font-medium"> You have  donated for Humankind </h1>
+
+        <h1 class="text-xl font-bold" > Successfully </h1>
+
+        <button class="my-2 h-10 w-44 border-2 bg-slate-100 font-bold rounded-lg "> Close Confirmation </button> 
+
+        </div>
+
+
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+        
+        <!-- <button  class="mt-4 lg:w-[580px] w-full  lg:h-12 h-full font-bold border-2 p-2 rounded-md bg-lime-400">Donate Now</button> -->
     </div>
 </div>
 
@@ -108,6 +135,12 @@
         </p>
         <input type="text" placeholder="Write Donation Amount" class="mt-6 lg:w-[580px] lg:h-12  w-full h-full border-2 p-2 rounded-md" id="inp-feni">
         <br>
+
+        
+
+        
+
+        
         <button class="mt-4 lg:w-[580px] w-full lg:h-12 h-full font-bold border-2 p-2 rounded-md bg-lime-400" id="btn-feni">Donate Now</button>
     </div>
 </div>
@@ -129,7 +162,10 @@
         <input type="text" placeholder="Write Donation Amount" class="mt-6 lg:w-[580px] lg:h-12 
          w-full h-full border-2 p-2 rounded-md" id="inp-quota">
         <br>
-        <button class="mt-4 lg:w-[580px] w-full lg:h-12  h-full font-bold border-2 p-2 rounded-md bg-lime-400" id="btn-quota">Donate Now</button>
+
+        <button class="mt-4 lg:w-[580px] w-full lg:h-12 h-full font-bold border-2 p-2 rounded-md bg-lime-400" id="btn-quota">Donate Now</button>
+
+          
     </div>
 </div>
 

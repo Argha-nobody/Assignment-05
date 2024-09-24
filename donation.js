@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
             document.getElementById("history-section1").appendChild(p);
 
+            Date
+
         } else {
             alert("Please enter a valid donation amount."); 
         }
