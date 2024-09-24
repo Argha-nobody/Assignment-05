@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     btn.addEventListener("click", function() {
 
+
         const value = parseFloat(inputt.value); 
 
         if ( !isNaN(value) && value > 0 ) {
@@ -15,6 +16,12 @@ document.addEventListener("DOMContentLoaded", function() {
             balnElement.textContent = nowbl + " BDT"; 
             inputt.value = '';
             upp.textContent = value; 
+
+            const p = document.createElement("p");
+
+            p.innerText = ` ${value} Taka is successfully donated for Noahkhali`;
+
+            document.getElementById("history-section1").appendChild(p);
 
         } else {
             alert("Please enter a valid donation amount."); 
@@ -44,6 +51,15 @@ document.addEventListener("DOMContentLoaded", function() {
             balnElement.textContent = nowbl + " BDT"; 
             inputt.value = '';
             upp.textContent = value;
+
+           
+
+            const p = document.createElement("p");
+
+            p.innerText = ` ${value} Taka is successfully donated for Feni-Flood`;
+
+            document.getElementById("history-section2").appendChild(p);
+
         } else {
             alert("Please enter a valid donation amount."); 
         }
@@ -68,6 +84,15 @@ document.addEventListener("DOMContentLoaded", function() {
             balnElement.textContent = nowbl + " BDT"; 
             inputt.value = '';
             upp.textContent = value;
+
+            const p = document.createElement("p");
+
+            p.innerText = ` ${value} Taka is successfully donated for Quota-Movement`;
+
+            document.getElementById("history-section3").appendChild(p);
+
+
+
         } else {
             alert("Please enter a valid donation amount."); 
         }
