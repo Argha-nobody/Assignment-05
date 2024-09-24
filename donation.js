@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
             nowbl -= value; 
             balnElement.textContent = nowbl + " BDT"; 
             inputt.value = '';
-            upp.textContent = value;
+            upp.textContent = value; 
 
         } else {
             alert("Please enter a valid donation amount."); 
