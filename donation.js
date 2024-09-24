@@ -23,7 +23,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
             document.getElementById("history-section1").appendChild(p);
 
-            Date
+            const d = new Date();
+            d.setFullYear(2024); 
+            console.log(d);
+            const formattedDate = d.toLocaleString();
+
+
+            const p1 = document.createElement("p");
+
+
+            p1.innerText = ` ${formattedDate}`;
+
+
+            document.getElementById("history-section1").appendChild(p1);
+
 
         } else {
             alert("Please enter a valid donation amount."); 
@@ -62,6 +75,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
             document.getElementById("history-section2").appendChild(p);
 
+            const d = new Date();
+            d.setFullYear(2024); 
+            console.log(d);
+            const formattedDate = d.toLocaleString();
+
+
+            const p1 = document.createElement("p");
+
+
+            p1.innerText = ` ${formattedDate}`;
+
+
+            document.getElementById("history-section2").appendChild(p1);
+
         } else {
             alert("Please enter a valid donation amount."); 
         }
@@ -92,6 +119,20 @@ document.addEventListener("DOMContentLoaded", function() {
             p.innerText = ` ${value} Taka is successfully donated for Quota-Movement`;
 
             document.getElementById("history-section3").appendChild(p);
+
+            const d = new Date();
+            d.setFullYear(2024); 
+            console.log(d);
+            const formattedDate = d.toLocaleString();
+
+
+            const p1 = document.createElement("p");
+
+
+            p1.innerText = ` ${formattedDate}`;
+
+
+            document.getElementById("history-section3").appendChild(p1);
 
 
 

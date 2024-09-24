@@ -49,7 +49,7 @@
 
         <!-- BUTTON SECTION  -->
 
-        <section class=" sticky top-7 flex justify-center py-14 gap-5">
+        <section class=" sticky top-10 flex justify-center py-14 gap-5">
 
             <div> 
                 <button class=" text-base font-bold h-10 w-24 bg-lime-400 rounded-md" id="go-back"> Donation </button> 
@@ -136,12 +136,39 @@
         <input type="text" placeholder="Write Donation Amount" class="mt-6 lg:w-[580px] lg:h-12  w-full h-full border-2 p-2 rounded-md" id="inp-feni">
         <br>
 
+
+        <button id="btn-feni" class="btn mt-4 lg:w-[580px] w-full lg:h-12  h-full font-bold border-2 p-2 rounded-md bg-lime-400" onclick="my_modal_2.showModal()"> Donate Now </button>
+      <dialog id="my_modal_3" class="modal2">
+       <div class="modal-box">
         
+        <div class="text-center">  
+
+            <h1 class="text-4xl  font-bold">  Congrates! </h1>
+
+        <img src="coin.png" alt="" class="mx-auto my-5">
+
+        <h1 class="text-base font-medium"> You have  donated for Humankind </h1>
+
+        <h1 class="text-xl font-bold" > Successfully </h1>
+
+        <button class="my-2 h-10 w-44 border-2 bg-slate-100 font-bold rounded-lg "> Close Confirmation </button> 
+
+        </div>
+
+
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
 
         
 
         
-        <button class="mt-4 lg:w-[580px] w-full lg:h-12 h-full font-bold border-2 p-2 rounded-md bg-lime-400" id="btn-feni">Donate Now</button>
+
+        
+        <!-- <button class="mt-4 lg:w-[580px] w-full lg:h-12 h-full font-bold border-2 p-2 rounded-md bg-lime-400" id="btn-feni">Donate Now</button> -->
+
     </div>
 </div>
 
@@ -163,7 +190,32 @@
          w-full h-full border-2 p-2 rounded-md" id="inp-quota">
         <br>
 
-        <button class="mt-4 lg:w-[580px] w-full lg:h-12 h-full font-bold border-2 p-2 rounded-md bg-lime-400" id="btn-quota">Donate Now</button>
+        <button id="btn-quota" class="btn mt-4 lg:w-[580px] w-full lg:h-12  h-full font-bold border-2 p-2 rounded-md bg-lime-400" onclick="my_modal_2.showModal()"> Donate Now </button>
+      <dialog id="my_modal_4" class="moda3">
+       <div class="modal-box">
+        
+        <div class="text-center">  
+
+            <h1 class="text-4xl  font-bold">  Congrates! </h1>
+
+        <img src="coin.png" alt="" class="mx-auto my-5">
+
+        <h1 class="text-base font-medium"> You have  donated for Humankind </h1>
+
+        <h1 class="text-xl font-bold" > Successfully </h1>
+
+        <button class="my-2 h-10 w-44 border-2 bg-slate-100 font-bold rounded-lg "> Close Confirmation </button> 
+
+        </div>
+
+
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+
+        <!-- <button class="mt-4 lg:w-[580px] w-full lg:h-12 h-full font-bold border-2 p-2 rounded-md bg-lime-400" id="btn-quota">Donate Now</button> -->
 
           
     </div>
@@ -178,23 +230,23 @@
         <!-- HISTORY SECTION  -->
 
 
-        <section class="hidden" id="history-section">
+        <section class="hidden " id="history-section">
 
-            <div class="border-2 lg:w-[1140px] h-28 mx-auto rounded-lg text-center text-xl font-bold py-8 overflow-scroll " id="history-section1">
+            <div class="border-2 lg:w-[1140px] h-36 mx-auto rounded-lg text-center text-xl font-bold py-8 overflow-scroll m-5 " id="history-section1">
 
 
 
             </div>
         
-            <div class="border-2 lg:w-[1140px] h-28 mx-auto rounded-lg text-center text-xl font-bold py-8  
-            overflow-scroll "  id="history-section2"> </div>
+            <div class="border-2 lg:w-[1140px] h-36 mx-auto rounded-lg text-center text-xl font-bold py-8  
+            overflow-scroll m-5 "  id="history-section2"> </div>
         
         
         
             </div>
         
-            <div class="border-2 lg:w-[1140px] h-28 mx-auto rounded-lg text-center text-xl font-bold py-8 
-            overflow-scroll " id="history-section3"> </div>
+            <div class="border-2 lg:w-[1140px] h-36 mx-auto rounded-lg text-center text-xl font-bold py-8 
+            overflow-scroll m-5 " id="history-section3"> </div>
 
 
         </section>
